@@ -72,7 +72,7 @@
                         </div>
                         <div class="col-12 mb-3">
                             <label for="number" class="form-label required">Number</label>
-                            <input type="text" class="form-control" name="number" id="number" required>
+                            <input type="number" class="form-control" name="number" id="number" required>
                         </div>
                         <div class="col-12 mb-3">
                             <label for="companyName" class="form-label required">Company Name</label>
@@ -84,7 +84,7 @@
                         </div>
                         <div class="col-12 mb-3">
                             <label for="imageUpload" class="form-label required">Owner Image</label>
-                            <input type="file" class="form-control" name="image" id="imageUpload" required>
+                            <input type="file" class="form-control" name="image" id="imageUpload" accept="image/jpeg, image/png, image/jpg, image/gif" required>
                         </div>
                          <div class="col-12 mb-3">
                             <label for="country_code" class="form-label required text-dark">Country</label>
@@ -99,11 +99,11 @@
                         </div>
                         <div class="col-12 mb-3">
                             <label for="companyLogo" class="form-label required">Company Logo</label>
-                            <input type="file" class="form-control" name="company_logo" id="companyLogo" required>
+                            <input type="file" class="form-control" name="company_logo" id="companyLogo" accept="image/jpeg, image/png, image/jpg, image/gif" required>
                         </div>
                         <div class="col-12 mb-3">
                             <label for="companyCoverImage" class="form-label required">Company Cover Image</label>
-                            <input type="file" class="form-control" name="company_cover_image" id="companyCoverImage" required>
+                            <input type="file" class="form-control" name="company_cover_image" id="companyCoverImage" accept="image/jpeg, image/png, image/jpg, image/gif" required>
                         </div>
                     </div>
                     <div class="d-flex gap-2 justify-content-center mb-5">
