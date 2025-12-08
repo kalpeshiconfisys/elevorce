@@ -25,9 +25,9 @@ class PaymentController extends Controller
 
         $currency = $request->currency;
         $amount = $request->amount;
-
-        Stripe::setApiKey(env('STRIPE_SECRET'));
         
+        Stripe::setApiKey(env('STRIPE_SECRET'));
+
         $paymentIntent = PaymentIntent::create([
             'amount' => $amount * 100,
             'currency' => $currency,

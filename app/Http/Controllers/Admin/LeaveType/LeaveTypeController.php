@@ -17,7 +17,13 @@ class LeaveTypeController extends Controller
 
     public function index($employer_id)
     {
+
+        
+
         $employer_id = base64_decode($employer_id);
+
+
+
         $leaveTypes = LeaveType::where('employer_id', $employer_id)
             ->orderBy('created_at', 'desc')
             ->paginate(10);

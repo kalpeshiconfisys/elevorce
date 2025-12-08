@@ -312,7 +312,7 @@
                                 Please add a site first before managing site managers, employees, or shifts.
                             </div>
                             <div class="modal-footer">
-                                <a href="{{ url('admin/site/' . $data['company']->id) }}" class="btn btn-primary">Add
+                                <a href="{{ url('admin/site/' . trim(base64_encode($data['company']->id), '=')) }}" class="btn btn-primary">Add
                                     Site</a>
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             </div>
@@ -335,7 +335,7 @@
                                     them now to unlock all features.
                                 </div>
                                 <div class="modal-footer">
-                                    <a href="{{ url('admin/leave-type/list/' . $data['company']->id) }}"
+                                    <a href="{{ url('admin/leave-type/list/' . trim(base64_encode($data['company']->id), '=')) }}"
                                         class="btn btn-primary">+ Add Leave Type</a>
                                 </div>
 

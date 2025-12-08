@@ -35,7 +35,6 @@ class DashboardController extends Controller
                     : 0;
                 $i['employee_count'] = $employeeCount;
                 $i['growth_percentage'] = $growthPercentage;
-
                 return $i;
             })
             ->sortByDesc('employee_count')

@@ -28,8 +28,6 @@ class AttendanceManagementController extends Controller
         $offset = $request->offset;
 
 
-        
-
         if (!$year || !$month) {
             return $this->error('Year and month are required.');
         }
