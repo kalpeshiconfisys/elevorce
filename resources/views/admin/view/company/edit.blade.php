@@ -41,7 +41,7 @@
 
                             <div class="col-12 mb-3">
                                 <label class="form-label required">Number</label>
-                                <input type="tel" class="form-control" name="number"
+                                <input type="number" class="form-control" name="number"
                                     value="{{ old('number', $employer->number) }}" required>
                             </div>
                             <div class="col-12 mb-3">
